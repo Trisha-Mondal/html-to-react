@@ -1,43 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
+    <!-- <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>JobBoard HTML-5 Template</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="https://preview.colorlib.com/theme/jobsco/site.webmanifest">
+    <link rel="shortcut icon" type="image/x-icon" href="https://preview.colorlib.com/theme/jobsco/assets/img/favicon.ico">
+
+    <link rel="stylesheet" href="assets/./JobBoard HTML-5 Template_files/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/./JobBoard HTML-5 Template_files/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/./JobBoard HTML-5 Template_files/slicknav.css">
+    <link rel="stylesheet" href="assets/./JobBoard HTML-5 Template_files/animate.min.css">
+    <link rel="stylesheet" href="assets/./JobBoard HTML-5 Template_files/magnific-popup.css">
+    <link rel="stylesheet" href="assets/./JobBoard HTML-5 Template_files/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/./JobBoard HTML-5 Template_files/themify-icons.css">
+    <link rel="stylesheet" href="assets/./JobBoard HTML-5 Template_files/slick.css">
+    <link rel="stylesheet" href="assets/./JobBoard HTML-5 Template_files/nice-select.css">
+    <link rel="stylesheet" href="assets/./JobBoard HTML-5 Template_files/style.css">
+    <script type="text/javascript" async="" src="./JobBoard HTML-5 Template_files/analytics.js.download" nonce="8c262087-1c40-4264-a4a1-deff826c644e"></script>
+    <script defer="" referrerpolicy="origin" src="./JobBoard HTML-5 Template_files/s.js.download"></script>
+    <script nonce="8c262087-1c40-4264-a4a1-deff826c644e">
+        (function(w, d) {
+            ! function(dk, dl, dm, dn) {
+                dk[dm] = dk[dm] || {};
+                dk[dm].executed = [];
+                dk.zaraz = {
+                    deferred: [],
+                    listeners: []
+                };
+                dk.zaraz.q = [];
+                dk.zaraz._f = function(dp) {
+                    return function() {
+                        var dq = Array.prototype.slice.call(arguments);
+                        dk.zaraz.q.push({
+                            m: dp,
+                            a: dq
+                        })
+                    }
+                };
+                for (const dr of["track", "set", "debug"]) dk.zaraz[dr] = dk.zaraz._f(dr);
+                dk.zaraz.init = () => {
+                    var ds = dl.getElementsByTagName(dn)[0],
+                        dt = dl.createElement(dn),
+                        du = dl.getElementsByTagName("title")[0];
+                    du && (dk[dm].t = dl.getElementsByTagName("title")[0].text);
+                    dk[dm].x = Math.random();
+                    dk[dm].w = dk.screen.width;
+                    dk[dm].h = dk.screen.height;
+                    dk[dm].j = dk.innerHeight;
+                    dk[dm].e = dk.innerWidth;
+                    dk[dm].l = dk.location.href;
+                    dk[dm].r = dl.referrer;
+                    dk[dm].k = dk.screen.colorDepth;
+                    dk[dm].n = dl.characterSet;
+                    dk[dm].o = (new Date).getTimezoneOffset();
+                    if (dk.dataLayer)
+                        for (const dy of Object.entries(Object.entries(dataLayer).reduce(((dz, dA) => ({...dz[1],
+                                ...dA[1]
+                            }))))) zaraz.set(dy[0], dy[1], {
+                            scope: "page"
+                        });
+                    dk[dm].q = [];
+                    for (; dk.zaraz.q.length;) {
+                        const dB = dk.zaraz.q.shift();
+                        dk[dm].q.push(dB)
+                    }
+                    dt.defer = !0;
+                    for (const dC of[localStorage, sessionStorage]) Object.keys(dC || {}).filter((dE => dE.startsWith("_zaraz_"))).forEach((dD => {
+                        try {
+                            dk[dm]["z_" + dD.slice(7)] = JSON.parse(dC.getItem(dD))
+                        } catch {
+                            dk[dm]["z_" + dD.slice(7)] = dC.getItem(dD)
+                        }
+                    }));
+                    dt.referrerPolicy = "origin";
+                    dt.src = "/cdn-cgi/zaraz/s.js?z=" + btoa(encodeURIComponent(JSON.stringify(dk[dm])));
+                    ds.parentNode.insertBefore(dt, ds)
+                };
+                ["complete", "interactive"].includes(dl.readyState) ? zaraz.init() : dk.addEventListener("DOMContentLoaded", zaraz.init)
+            }(w, d, "zarazData", "script");
+        })(window, document);
+    </script> -->
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
+    <meta name="description" content="Web site created using create-react-app" />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
+
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
     <title>React App</title>
-  </head>
-  <body>
+    <link rel="manifest" href="https://preview.colorlib.com/theme/jobsco/site.webmanifest">
+    <link rel="shortcut icon" type="image/x-icon" href="https://preview.colorlib.com/theme/jobsco/assets/img/favicon.ico">
+
+    <link rel="stylesheet" href="assets/./JobBoard HTML-5 Template_files/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/./JobBoard HTML-5 Template_files/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/./JobBoard HTML-5 Template_files/slicknav.css">
+    <link rel="stylesheet" href="assets/./JobBoard HTML-5 Template_files/animate.min.css">
+    <link rel="stylesheet" href="assets/./JobBoard HTML-5 Template_files/magnific-popup.css">
+    <link rel="stylesheet" href="assets/./JobBoard HTML-5 Template_files/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/./JobBoard HTML-5 Template_files/themify-icons.css">
+    <link rel="stylesheet" href="assets/./JobBoard HTML-5 Template_files/slick.css">
+    <link rel="stylesheet" href="assets/./JobBoard HTML-5 Template_files/nice-select.css">
+    <link rel="stylesheet" href="assets/./JobBoard HTML-5 Template_files/style.css">
+
+    <script src="assets/./JobBoard HTML-5 Template_files/modernizr-3.5.0.min.js.download"></script>
+    <script src="assets/./JobBoard HTML-5 Template_files/jquery-1.12.4.min.js.download"></script>
+    <script src="assets/./JobBoard HTML-5 Template_files/popper.min.js.download"></script>
+    <script src="assets/./JobBoard HTML-5 Template_files/bootstrap.min.js.download"></script>
+
+    <script src="assets/./JobBoard HTML-5 Template_files/owl.carousel.min.js.download"></script>
+    <script src="assets/./JobBoard HTML-5 Template_files/slick.min.js.download"></script>
+    <script src="assets/./JobBoard HTML-5 Template_files/jquery.slicknav.min.js.download"></script>
+    <script src="assets/./JobBoard HTML-5 Template_files/range.js.download"></script>
+
+    <script src="assets/./JobBoard HTML-5 Template_files/wow.min.js.download"></script>
+    <script src="assets/./JobBoard HTML-5 Template_files/jquery.magnific-popup.js.download"></script>
+    <script src="assets/./JobBoard HTML-5 Template_files/jquery.nice-select.min.js.download"></script>
+
+    <script src="assets/./JobBoard HTML-5 Template_files/contact.js.download"></script>
+    <script src="assets/./JobBoard HTML-5 Template_files/jquery.form.js.download"></script>
+    <script src="assets/./JobBoard HTML-5 Template_files/jquery.validate.min.js.download"></script>
+    <script src="assets/./JobBoard HTML-5 Template_files/mail-script.js.download"></script>
+    <script src="assets/./JobBoard HTML-5 Template_files/jquery.ajaxchimp.min.js.download"></script>
+
+    <script src="assets/./JobBoard HTML-5 Template_files/plugins.js.download"></script>
+    <script src="assets/./JobBoard HTML-5 Template_files/main.js.download"></script>
+
+    <script async="" src="assets/./JobBoard HTML-5 Template_files/js"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'UA-23581568-13');
+    </script>
+</head>
+
+<body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    <div id="root">guria</div>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+</body>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
 </html>
